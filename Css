@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+}
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #fcb69f;
+}
+
+/* Sections */
+section {
+  padding: 50px 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 3px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Skills Styling */
+.skills span {
+  display: inline-block;
+  background: #ff9a9e;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.skills span:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
