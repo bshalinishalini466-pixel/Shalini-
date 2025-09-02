@@ -1,0 +1,30 @@
+// Greeting based on time
+let greeting = document.getElementById("greeting");
+let hour = new Date().getHours();
+
+if (hour < 12) {
+  greeting.innerText = "Good Morning! Welcome to My Portfolio";
+} else if (hour < 18) {
+  greeting.innerText = "Good Afternoon! Welcome to My Portfolio";
+} else {
+  greeting.innerText = "Good Evening! Welcome to My Portfolio";
+}
+
+// Show extra info in About section
+function showMore() {
+  let extra = document.getElementById("extra");
+  if (extra.style.display === "none") {
+    extra.style.display = "block";
+  } else {
+    extra.style.display = "none";
+  }
+}
+
+// Highlight selected skill
+function highlight(element) {
+  element.style.background = "#06d6a0";
+  element.style.transform = "scale(1.2)";
+  setTimeout(() => {
+    element.style.transform = "scale(1)";
+  }, 500);
+}
